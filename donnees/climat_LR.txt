@@ -1,6 +1,6 @@
 POSTE	cumul_precip	temperature_moyenne	annee	mois
 Carcassonne	136.6	6.8	2004	1
-Carcassonne	30.4	6.9	2004	2
+Carcassonne	à	6.9	2004	2
 Carcassonne	59	9.2	2004	3
 Carcassonne	108	11.8	2004	4
 Carcassonne	48	15.7	2004	5
