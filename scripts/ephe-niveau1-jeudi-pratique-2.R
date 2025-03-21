@@ -39,7 +39,7 @@ h2 <- ggplot(biom)+
   geom_histogram()
 
 h3 <- ggplot(biom)+
-  aes(x = poids, y = tarse)+
+  aes(x = tarse, y = poids)+
   geom_point()
 
 (h1 + h2)/h3
@@ -132,7 +132,9 @@ missdata <-
 # recoder le modèle dans le sens de la prédiction
 
 lmpred <- lm(tarse ~ poids, data = biom, subset = espece == "PARCAE")
+
 new.tarse <- data.frame(poids = missdata$poids)
+
 pred.tarse <- predict(lmpred, newdata = new.tarse, interval = "confidence")
 
 ## prédire entre espèces -------------------------------------------------------
